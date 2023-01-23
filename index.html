@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Rock-Paper-Scissor Game</title>
+</head>
+<body>
+    <div class="heading">
+    <h1>ROCK-PAPER-SCISSOR</h1>
+    <span class="vss">User <span class="vs">vs</span> Computer</span>
+    </div >
+    <div class="comment">
+        <P>START THE GAME</P>
+    </div>
+    <div class="container" >
+        <div class="pictures" style="width: 550px; ">
+        <img class="rock" src="images/rock.png" name="rock" style="height: 170.19px; width: 130.09px ;"alt="rock"><img 
+        class="paper" src="images/paper.png" name="paper" style="height: 170.19px; width: 140.09px ;" alt="paper"><img 
+        class="scissor" src="images/scissor.png" name="scissor" style="height: 170.19px; width: 200.09px ;" alt="scissors">
+        </div>
+        <div class="scoreboard"  >
+        <h3>SCORE BOARD </h3>
+        <div class="elements">
+            <p >USER: <span class="userScore">0</span></p>
+            <p>COMPUTER: <span class="computerScore">0</span></p>
+            <button  class="reset"  style=" background-color:#9b3737; ">RESET</button>
+            <!-- <button onclick="buttonSound(); setTimeout(goBack, 1000);" class="back"  style=" background-color:#9b3737; ">BACK</button> -->
+        </div>
+        <dialog id="myWinnerDialog">
+            <p >winner</p>
+            <button  onclick="goToSecDialogBox();closeWinnerDialog()">OK</button>
+        </dialog>
+        <dialog id="myLosserDialog">
+            <p >Losser</p>
+            <button onclick="goToSecDialogBox();closeLosserDialog()">OK</button>
+        </dialog>
+        <dialog id="secondDialog">
+            <p>Do you want to play again?</p>
+            <button onclick="reset();closeDialog()">Yes</button>
+            <button>No</button>
+        </dialog>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    // function goBack(){
+    
+    //     document.location.href="startbtn.html";
+    // }
+
+
+    function goToSecDialogBox(){
+        let x= document.querySelector("#secondDialog");
+        x.show();
+    }
+
+
+    function closeDialog(){
+        let y= document.querySelector("#secondDialog");
+        y.close();
+    }
+
+
+    function closeWinnerDialog(){
+        let y = document.querySelector("#myWinnerDialog");
+        y.close();
+    }
+
+
+    function closeLosserDialog(){
+        let y = document.querySelector("#myLosserDialog");
+        y.close();
+    }
+    
+</script>
+
+<script  src="app.js"></script>
+</html>

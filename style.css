@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(75, 23, 85);
+    background-image: url("images/backgroundpic.jpg");
+    background-position-x: right;
+}
+.heading{
+   /* background-color: #CE7777;*/
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.vss{
+    font-size: 35px;
+    font-family: 'Questrial', sans-serif;
+    color: rgb(213, 247, 235);
+}
+.vs{
+    font-size: 22px;
+}
+h1{
+    
+    text-align: center;
+    font-size: 70px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-family: 'Caveat', cursive;
+   color: rgb(213, 247, 235);
+}
+.comment{
+    font-size: 45px;
+    text-align: center;
+    color:white;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.pictures{
+    display: flex;
+    justify-content:space-between;
+    
+    
+}
+.scoreboard{
+    display:flex;
+    flex-direction: column;
+   border-color: #CE7777;
+   border-radius: 10px;
+    border-style: ridge;
+    flex-grow: 0.5;
+    color:white;
+    box-shadow: #9b3737;
+    
+}
+
+h3{
+    font-size: 35px;
+    text-decoration: underline;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+h3+div{
+    font-size: 25px;
+}
+img{
+    margin: 30px;
+    border-radius: 30%;
+}
+img:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    box-shadow:  0em 0.5em 0.5em -0.3em rgb(120, 233, 195);
+}
+.elements{
+    position:relative;
+    margin-left: 10px;
+}
+.reset{
+    position:absolute;
+    right: 100px;
+    bottom:5px;
+   border-color: #CE7777;
+    font-weight:100;
+    color: rgb(213, 247, 235);
+    border-radius: 5px;
+    
+
+}
+.back{
+    position: absolute;
+    right:28px;
+    bottom:5px;
+    border-color: #CE7777;
+     font-weight:100;
+     color: rgb(213, 247, 235);
+     border-radius: 5px;
+}
+.reset:hover,.back:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    box-shadow:  0.1em 0.1em 0.5em 0.3em rgb(233, 120, 139);
+}
+dialog{
+    width: 350px;
+    
+    
+}
+.playAgain{
+    left: 200px;
+}
+#myWinnerDialog, #myLosserDialog{
+    font-size: 20px;
+
+    align-self: center;  
+}
+button:hover{
+    cursor: pointer;
+}
